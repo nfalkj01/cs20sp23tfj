@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'/>
+    <meta name="description" content="Contact Us Page for Webber">
+	<meta name="keywords" content="Web Programming, Website Design, Web, Business, Content">
+	<meta name="author" content="SpiderWeb Programmers">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<title>Spider-Web: A Website Design Company</title>
+    <link rel="icon" href="images/swico.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        
+        h1 {
+            padding-top: 2px;
+            padding-left: 5px;
+            margin-bottom: 2px;
+        }
+        #subtitle {
+            padding-left: 5px;
+            font-family: sans-serif;
+            padding-bottom: 2px;
+            color:#001b2e;
+        }
+
+        #homelink {
+            display: block;
+            width: 215px;
+        }
+
+        #subtitle:hover {
+            font-weight: normal;
+        }
+        h2, .subline, #need {
+            padding-left: 5px;
+            font-family: sans-serif;
+            color: #001b2e;
+        }
+        
+
+        #booklink, .content1 {
+            color: #001b2e;
+            padding: 15px;
+        }
+
+        #booklink {
+            background-color: #00cfc1;
+            margin-left: 5px;
+            outline-style: solid;
+            font-family: standard;
+        
+        }
+
+        #booklink:hover {
+            font-weight: bolder;
+        }
+
+        .content1 {
+            display: inline-block;
+            width: 650px;
+            height: 190px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 7px;
+
+        }
+
+        h2, .subline {
+            font-family: standard;
+        }
+        #break {
+            background-color: #f4f4f4;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #pageCon {
+            display: inline-block;
+            width: 100%;
+            height: 600px;
+            background-image: url("images/background.jpg");
+            background-position: bottom right;
+            margin: 0px;
+            /* <a href='https://pngtree.com/free-backgrounds'>free background photos from pngtree.com/</a> */
+
+        }
+
+        #content2 {
+            text-align: center;
+            background-color: #00cfc1;
+        }
+
+        #content3 {
+            padding-top: 5%;
+            padding-bottom: 7%;
+        }
+
+        .con3text {
+            font-family: standard;
+            display: inline-block;
+            width: 33%;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #content4 {
+            text-align: center;
+            background-color: #e84855;
+        }
+
+        #con4space {
+            display: inline-block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 37%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            background-color: #e84855;
+        }
+
+        #con4head {
+            text-align: center;
+            padding-bottom: 5%;
+        }
+
+        .midline {
+            width:60%; 
+            margin-left: auto; 
+            margin-right: auto;
+            margin-bottom: 2%;
+        }
+
+        #firstcon {
+            font-family: standard;
+            font-size: 100px;
+            
+            
+            color:#e84855;
+        }
+
+        #content1 {
+            
+            display: inline-block;
+            /* height: 15%;
+            width: 20%; */
+            margin-left: 13%;
+            margin-top: 13%;
+            padding: 5px;
+            /* background: rgba(0, 207, 193, .4); */
+            
+        }
+
+        #subcon {
+            font-family: standard;
+            padding-left: 7px;
+            
+        }
+
+        @media (max-width: 812.5px) {
+            .content1 {
+                width: 80%;
+                height: auto;
+                text-align: center;
+                margin-left: 2%;
+                margin-right: 2%;
+            }
+            .con3text {
+                width: 50%;
+                padding: 2%;
+            }
+            #content3 {
+                text-align: center;
+            }
+            #con4head {
+                padding-bottom: 10%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">  
+        <div class="sidebar" id="sidebar">
+            <a><span class="close" id="close">&times;</span></a>
+            <ul>
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="contact_form.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="webber.html">Payment Plans</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="othersites.html">Websites We Built</a></li>
+                <li><a href="process.html">Our Services</a></li>
+            </ul>
+
+        </div>
+        <div class="logo">
+            <a href="index.html"><img id="logo_img" src="images/swico.ico"></a>
+        </div>
+        
+        <div class="open_sidebar">
+            <span class="toggler" id="toggler">&#9776;</span>
+        </div>
+    </div>
+
+    <script>
+        
+        let sidebar = document.getElementById("sidebar");
+        let toggler = document.getElementById("toggler");
+        let closer = document.getElementById('close');
+        
+        closer.onclick = function() {
+            sidebar.style.width = "0px";
+        }
+
+        toggler.onclick = function() {
+            sidebar.style.width = "300px";
+        }
+    </script>
+    
+    <div id="pageCon">
+    <hr style="margin-top: 0px;">
+    <div id="content1">
+        <div id="subcon">a website design company</div>
+        <div id="firstcon">Spider-Web</div>
+        
+    </div>
+    
+    <br />
+    
+    <br />
+
+    </div>
+
+    <div id="content2">
+        <br />
+        <div class="">
+            <br />
+            <h2>Welcome to Spider-Web!</h2>
+            <div class="subline">We are a website design company pushing the boundaries of web and
+                design since 2023
+            </div>
+            <br />
+            <div class="subline">Our mission is to provide human solutions to the auto
+                dominated industry of web technology
+            </div>
+            <br />
+            <div><a href="aboutus.html" class="subline"><STRONG>Want to learn more?</STRONG></a></div>
+        
+        
+            
+            </div>
+            <br />
+            <br />
+    </div>
+
+    <div id="content3" style="padding-left: 4px;">
+        <h2 style="text-align: center;">What We Do</h2>
+        <br />
+        <br />
+        <div class="con3text">Need a website quickly? Want a real person to help you out?</div>
+        <div class="con3text">Maybe just a tune-up for an old website you are no longer satisfied with?</div>
+        <div class="con3text" style="padding-bottom: 3%;">The process is simple and intuitive!<br />&nbsp;</div>
+        <hr class="midline">
+
+        <h2 style="text-align: center;">Who We Are</h2>
+        <br />
+        <br />
+        <div class="con3text">A collection of people devoted to quality over all else</div>
+        <div class="con3text">Coders. Designers. Engineers. Architects. International Criminals.</div>
+        <div class="con3text" style="padding-bottom: 3%;">A team dedicated to giving you exactly what you want</div>
+        <hr class="midline">
+
+        <h2 style="text-align: center;">Pricing</h2>
+        <br />
+        <br />
+        <div class="con3text">We accepts baseball, football, basketball, and Pokemon cards</div>
+        <div class="con3text">Extremely afordable and afordably extreme<br />&nbsp;</div>
+        <div class="con3text">We also accept credit cards, debit cards, Venmo, cash, and traveller's checks</div>
+        
+    </div>
+
+    <div id="content4">
+        <div id="con4space">
+            <h2 id="con4head">What are you waiting for?</h2>
+            <div><a href="contact_form.html" id="booklink">Book Now!</a></div>
+        </div>
+        
+    </div>
+    
+    
+	<div class="footer">
+			<div class="contact_info">
+				<p class="phone"><strong>Phone Number: </strong>+1 123 987 563</p>
+				<p class="email_address"> <strong>E-mail Adress: </strong></p> <a href='mailto:spiderweb@gmail.com'>spiderweb@gmail.com</a>
+			</div>
+			<div class="quote">
+				<p>Not just a website, a lifestyle.</p>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2023 SpiderWeb Programmers</p>
+			</div>
+		</div>
+	
+</body>
+
+</html>

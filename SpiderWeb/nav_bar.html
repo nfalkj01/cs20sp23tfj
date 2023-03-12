@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+    <body>
+        <div class="header">
+            
+            <div class="sidebar" id="sidebar">
+                <a><span class="close" id="close">&times;</span></a>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                <li><a href="contact_form.html">Contact Us</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="webber.html">Payment Plans</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="othersites.html">Websites We Built</a></li>
+                <li><a href="process.html">Our Services</a></li>
+                </ul>
+
+            </div>
+            <div class="logo">
+                <a href="home.html"><img id="logo_img" src="images/swico.ico"></a>
+            </div>
+            
+            <div class="open_sidebar">
+                <span class="toggler" id="toggler">&#9776;</span>
+            </div>
+            
+            
+            
+        </div>
+
+        <script>
+            
+            let sidebar = document.getElementById("sidebar");
+            let toggler = document.getElementById("toggler");
+            let closer = document.getElementById('close');
+            
+            closer.onclick = function() {
+                sidebar.style.width = "0px";
+            }
+
+            toggler.onclick = function() {
+                sidebar.style.width = "300px";
+            }
+        </script>
+    </body>
+</html>
